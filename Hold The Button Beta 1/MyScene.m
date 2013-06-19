@@ -9,8 +9,9 @@
 #import "MyScene.h"
 
 @implementation MyScene
-
--(id)initWithSize:(CGSize)size {    
+@synthesize timer;
+@synthesize totalTime;
+-(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
@@ -27,7 +28,10 @@
     }
     return self;
 }
-
+-(void)timerCount{
+    totalTime++;
+    
+}
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     

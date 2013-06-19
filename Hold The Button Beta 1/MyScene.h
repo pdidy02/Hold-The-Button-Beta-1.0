@@ -9,5 +9,6 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface MyScene : SKScene
-
+@property(nonatomic, readwrite)NSTimer *timer;
+@property(nonatomic,readwrite)int64_t *totalTime;
 @end
