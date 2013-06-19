@@ -51,9 +51,14 @@
     }
 }
 -(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
-    
-    [self removeAllChildren];
-}
+    for (UITouch *touch in touches) {
+        CGPoint location = [touch locationInNode:self];
+        
+        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        
+        sprite.position = location;
+        [self removeAllChildren];
+    }}
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
 }
