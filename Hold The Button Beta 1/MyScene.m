@@ -30,11 +30,12 @@
 }
 -(void)timerCount{
     totalTime++;
-    
+    NSLog([NSString stringWithFormat:@"%lld",totalTime]);
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
+    totalTime=0;
+    timer=[NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(timerCount) userInfo:nil repeats:YES];
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
