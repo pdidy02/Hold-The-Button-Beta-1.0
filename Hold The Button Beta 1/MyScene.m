@@ -45,7 +45,10 @@
         [self addChild:sprite];
     }
 }
-
+-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    [self removeAllChildren];
+}
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
 }
