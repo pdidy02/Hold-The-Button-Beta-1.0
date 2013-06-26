@@ -50,7 +50,7 @@
         [self addChild:sprite];
     }
 }
--(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         

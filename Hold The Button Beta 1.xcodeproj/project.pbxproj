@@ -491,6 +491,7 @@
 				2C30985617717B3F004C7EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C30985717717B3F004C7EE4 /* Build configuration list for PBXNativeTarget "Hold The Button Beta 1Tests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				2C30985917717B3F004C7EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
